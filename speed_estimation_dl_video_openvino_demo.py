@@ -5,7 +5,8 @@ from __future__ import print_function, division
 # because OpenCV can't throttle FPS according to the framerate of the
 # video. This script is for development purposes only.
 #
-# python speed_estimation_dl.py --conf config/config.json --input sample_data/cars.mp4
+
+# python speed_estimation_dl_video_openvino_demo.py   -i sample_data/cars.mp4 -m frozen_darknet_yolov3_model.xml  -d MYRIAD --labels coco.names  -r
 
 # inform the user about framerates and speeds
 print("[INFO] NOTE: When using an input video file, speeds will be " \
